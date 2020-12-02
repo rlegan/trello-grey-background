@@ -1,0 +1,14 @@
+{
+    "name": "Trello background changer",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Change background from all Trello board to the Discord's grey.",
+    "homepage_url": "https://github.com/rlegan",
+    "permissions": ["https://trello.com/b/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://trello.com/b/*"],
+            "js": ["inject.js"]
+        }
+    ]
+}
